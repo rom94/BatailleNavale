@@ -14,14 +14,16 @@ public class SimplePointComTestDrive {
 
         String propopUtil = "2";
 
-        String resultat = spc.AutoVerif(propopUtil);
+        String resultat = spc.autoVerif(propopUtil);
 
         String resultatTest = "raté";
 
         if (resultat.equals("touché")){
-            resultatTest = "réussi"
+            resultatTest = "réussi";
         }
 
         System.out.println(resultatTest);
     }
+
+
 }
