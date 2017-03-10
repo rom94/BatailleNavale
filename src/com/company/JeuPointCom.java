@@ -3,15 +3,15 @@ package com.company;
 /**
  * Created by rpage on 06/03/2017.
  */
-public class JeuSimplePointCom {
+public class JeuPointCom {
     public static void main(String[] args) {
 
         int nbPropo = 0;
         GameHelper helper = new GameHelper();
-        SimplePointCom lePointCom = new SimplePointCom();
+        PointCom lePointCom = new PointCom();
         int randomNum = (int) (Math.random() * 5);
         int[] places = {randomNum, randomNum + 1, randomNum +2};
-        lePointCom.setCellules(places);
+        //lePointCom.setCellules(places);
         boolean estVivant = true;
 
         while (estVivant == true){

@@ -3,14 +3,14 @@ package com.company;
 /**
  * Created by rpage on 02/03/2017.
  */
-public class SimplePointComTestDrive {
+public class PointComTestDrive {
 
     public static void main(String[] args) {
 
-        SimplePointCom spc = new SimplePointCom();
+        PointCom spc = new PointCom();
 
-        int[] places = {2, 3, 4};
-        spc.setCellules(places);
+        /*int[] places = {2, 3, 4};
+        spc.setCellules(places);*/
 
         String propopUtil = "2";
 
