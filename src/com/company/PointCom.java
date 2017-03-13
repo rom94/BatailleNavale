@@ -8,14 +8,17 @@ import java.util.ArrayList;
 public class PointCom {
 
     private ArrayList<String> cellules;
-    //int nbTouches = 0;
+    private String nom;
 
-    public void setCellules(ArrayList<String> plc){
-        cellules = plc;
+    public void setCellules(ArrayList<String> places){
+        cellules = places;
+    }
+
+    public void setNom(String n){
+        nom = n;
     }
 
     public String autoVerif(String propoUtil){
-        //int propo = Integer.parseInt(stringPropo);
         String resultat = "manqué";
 
         int indice = cellules.indexOf(propoUtil);
@@ -24,24 +27,12 @@ public class PointCom {
             cellules.remove(indice);
             if (cellules.isEmpty()){
                 resultat = "coulé";
+                System.out.println("Ouille ! " + nom + " coulé :( ");
             } else {
                 resultat = "touché";
             }
         }
 
-        /*for (int i = 0; i < cellules.size(); i++){
-            if (propo == cellules[i]){
-                resultat = "touché";
-                nbTouches++;
-                break;
-            }
-        }
-
-        if (nbTouches == cellules.length){
-            resultat = "coulé";
-        }*/
-
-        System.out.println(resultat);
         return resultat;
     }
 }
