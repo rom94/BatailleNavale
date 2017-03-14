@@ -19,17 +19,17 @@ public class PointCom {
     }
 
     public String autoVerif(String propoUtil){
-        String resultat = "manqué";
+        String resultat = "manqué ";
 
         int indice = cellules.indexOf(propoUtil);
 
         if (indice >= 0){
             cellules.remove(indice);
             if (cellules.isEmpty()){
-                resultat = "coulé";
+                resultat = "coulé ";
                 System.out.println("Ouille ! " + nom + " coulé :( ");
             } else {
-                resultat = "touché";
+                resultat = "touché ";
             }
         }
 
